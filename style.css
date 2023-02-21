@@ -1,0 +1,7 @@
+.wraper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.wraper form {
+  color: red;
+}

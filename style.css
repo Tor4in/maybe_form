@@ -1,7 +1,74 @@
 .wraper {
   max-width: 1220px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
 }
 .wraper form {
-  color: red;
+  margin: 100px;
+  background-color: #ecdddd;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.wraper form input {
+  margin: 12px;
+  background: none;
+  border: none;
+  border-bottom: solid rgba(2, 2, 2, 0.3882352941) 1px;
+}
+.wraper form .radio p {
+  display: inline-block;
+}
+.wraper form button {
+  border: none;
+  background-color: #bca0a0;
+  border-radius: 8px;
+  padding: 12px 45px;
+  margin: 10px;
+}
+.wraper form:hover {
+  -webkit-box-shadow: -2.5px 3.5px 8px 3px #bca0a0;
+          box-shadow: -2.5px 3.5px 8px 3px #bca0a0;
+  -webkit-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
+}
+.wraper form .group_mail_name {
+  position: relative;
+  padding: 8px;
+}
+.wraper form .group_mail_name input {
+  margin: 12px 10px 0 10px;
+  outline: none;
+}
+.wraper form .group_mail_name label {
+  cursor: text;
+  position: absolute;
+  font-size: 0.8em;
+  top: 24px;
+  left: 20px;
+}
+.wraper form .group_mail_name label {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.wraper form .group_mail_name input:focus ~ label {
+  -webkit-transform: translate(-8px, -16px) scale(1.2);
+          transform: translate(-8px, -16px) scale(1.2);
+}
+.wraper form:nth-child(2) {
+  position: relative;
+  padding: 8px;
+}
+.wraper form:nth-child(2):before {
+  content: "E-mail";
+  position: absolute;
+  font-size: 0.8em;
+  top: 18px;
+  left: 16px;
 }

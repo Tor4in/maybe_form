@@ -12,13 +12,31 @@
 <body>
     <div class="wraper">
         <form action="#" method="post">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <div class="group_mail_name">
+                <input type="text" name="email" id="mail">
+                <label for="mail">E-mail</label>
+            </div>
+            <div class="group_mail_name">
+                <input type="text" name="name" id="name">
+                <label for="name">Name</label>
+            </div>
+
+
+
+             
+            
+            <div class="check">
+                <div class="inst"><input type="checkbox"> inst </div>
+                <div class="tg"> <input type="checkbox"> tg </div>
+            </div>
+            <div class="radio">
+                <input type="radio" name="age" value="-18"> -18
+                <input type="radio" name="age" value="+18"> +18
+            </div>
+            <input type="text" name="cart" placeholder="cart"> <br>
+            <input type="text" placeholder="crypto"> <br>
+            <input type="text" placeholder="coments"> <br>
+            <button>Send</button>
         </form>
     </div>
 </body>

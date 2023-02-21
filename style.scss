@@ -1,8 +1,99 @@
 .wraper {
     max-width: 1220px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+
 
     form {
-        color: red;
+        margin: 100px;
+
+        background-color: #ecdddd;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        input {
+            margin: 12px;
+            background: none;
+            border: none;
+            border-bottom: solid #02020263 1px;
+
+        }
+
+        .radio {
+            p {
+                display: inline-block;
+            }
+
+        }
+
+        button {
+            border: none;
+            background-color: #bca0a0;
+            border-radius: 8px;
+            padding: 12px 45px;
+            margin: 10px;
+
+
+        }
+
+        &:hover {
+            box-shadow: -2.5px 3.5px 8px 3px #bca0a0;
+            transform: translate(3px, -3px);
+        }
+
+        .group_mail_name {
+
+            input {
+                margin: 12px 10px 0 10px;
+                outline: none;
+            }
+
+            position: relative;
+            padding: 8px;
+
+            label {
+                cursor: text;
+                position: absolute;
+                font-size: 0.8em;
+                top: 24px;
+                left: 20px;
+            }
+
+            label {
+                transition: all 0.4s ease;
+            }
+
+            input:focus~label {
+                transform: translate(-8px, -16px) scale(1.2);
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+        &:nth-child(2) {
+            position: relative;
+            padding: 8px;
+
+            &:before {
+                content: 'E-mail';
+                position: absolute;
+                font-size: 0.8em;
+                top: 18px;
+                left: 16px;
+
+            }
+        }
+
+
+
     }
 }
